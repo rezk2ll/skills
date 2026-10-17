@@ -17,21 +17,33 @@
 </script>
 
 <Seo
-	title={`${item.slug}: ${KINDS[item.kind].label.toLowerCase()} for Claude Code`}
+	title={`${item.slug}, a Claude Code ${KINDS[item.kind].label.toLowerCase()}`}
 	description={item.description}
 	path={`/${item.slug}`}
+	type="article"
 	jsonLd={{
 		'@context': 'https://schema.org',
-		'@type': 'SoftwareSourceCode',
-		name: item.slug,
-		description: item.description,
-		url: `${SITE_URL}/${item.slug}`,
-		codeRepository: treeUrl,
-		license: 'https://opensource.org/licenses/MIT',
-		keywords: item.keywords.join(', '),
-		version: item.version,
-		runtimePlatform: 'Claude Code',
-		author: { '@type': 'Person', name: AUTHOR.name, url: AUTHOR.url }
+		'@graph': [
+			{
+				'@type': 'SoftwareSourceCode',
+				name: item.slug,
+				description: item.description,
+				url: `${SITE_URL}/${item.slug}`,
+				codeRepository: treeUrl,
+				license: 'https://opensource.org/licenses/MIT',
+				keywords: item.keywords.join(', '),
+				version: item.version,
+				runtimePlatform: 'Claude Code',
+				author: { '@type': 'Person', name: AUTHOR.name, url: AUTHOR.url }
+			},
+			{
+				'@type': 'BreadcrumbList',
+				itemListElement: [
+					{ '@type': 'ListItem', position: 1, name: 'Skills', item: `${SITE_URL}/` },
+					{ '@type': 'ListItem', position: 2, name: item.slug, item: `${SITE_URL}/${item.slug}` }
+				]
+			}
+		]
 	}}
 />
 
