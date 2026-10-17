@@ -46,7 +46,7 @@
 	<article class="min-w-0 space-y-8">
 		<header class="space-y-3">
 			<div class="flex flex-wrap items-center gap-2">
-				<Badge variant="secondary">{KINDS[item.kind].label}</Badge>
+				<Badge variant="secondary" class={KINDS[item.kind].badge}>{KINDS[item.kind].label}</Badge>
 				<span class="font-mono text-xs text-muted-foreground">v{item.version}</span>
 			</div>
 			<h1 class="font-mono text-3xl font-semibold tracking-tight">{item.slug}</h1>

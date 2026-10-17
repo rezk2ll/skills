@@ -59,13 +59,26 @@
 	}}
 />
 
-<section class="grid gap-10 pb-12 lg:grid-cols-[1fr_26rem] lg:items-end">
+<section class="relative grid gap-10 pb-12 lg:grid-cols-[1fr_26rem] lg:items-end">
+	<div
+		aria-hidden="true"
+		class="pointer-events-none absolute -top-24 -left-24 -z-10 size-[28rem] rounded-full bg-gradient-to-br from-orange-500/20 via-rose-500/10 to-violet-500/15 blur-3xl"
+	></div>
 	<div class="space-y-5">
-		<p class="font-mono text-xs tracking-wide text-muted-foreground uppercase">
-			{count('skill')} skills · {count('hook')} guardrails · {count('mod')} mods
+		<p class="flex flex-wrap gap-x-3 gap-y-1 font-mono text-xs tracking-wide uppercase">
+			{#each kinds as k (k)}
+				<span class="inline-flex items-center gap-1.5 text-muted-foreground"
+					><span class={['size-1.5 rounded-full', KINDS[k].accent]}></span>{count(k)}
+					{KINDS[k].plural}</span
+				>
+			{/each}
 		</p>
 		<h1 class="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-			Claude Code skills and guardrails I use every day
+			Claude Code skills and
+			<span
+				class="bg-gradient-to-r from-orange-500 via-rose-500 to-violet-500 bg-clip-text text-transparent"
+				>guardrails</span
+			> I use every day
 		</h1>
 		<p class="max-w-xl text-lg text-pretty text-muted-foreground">
 			Skills for pull requests, reviews, releases and design docs. Hooks that stop an agent before

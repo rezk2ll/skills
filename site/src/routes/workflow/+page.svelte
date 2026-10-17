@@ -78,7 +78,10 @@
 		{#each stages as stage, i (stage.title)}
 			<li class="rounded-xl border bg-card p-5">
 				<div class="flex items-baseline gap-3">
-					<span class="font-mono text-xs text-muted-foreground">0{i + 1}</span>
+					<span
+						class="inline-flex size-6 shrink-0 items-center justify-center self-center rounded-full bg-primary/15 font-mono text-xs font-medium text-primary"
+						>{i + 1}</span
+					>
 					<h2 class="text-lg font-semibold tracking-tight">{stage.title}</h2>
 				</div>
 				<p class="mt-2 text-sm leading-relaxed text-muted-foreground">{stage.body}</p>
@@ -88,7 +91,7 @@
 						{#if href}
 							<a
 								{href}
-								class="rounded-md border px-2 py-0.5 font-mono text-xs transition-colors hover:bg-muted"
+								class="rounded-md border px-2 py-0.5 font-mono text-xs transition-colors hover:border-primary/40 hover:text-primary"
 								>{r.slug}{has(r.slug) ? '' : ' ↗'}</a
 							>
 						{/if}
