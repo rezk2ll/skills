@@ -8,6 +8,7 @@
 
 	async function copy() {
 		await navigator.clipboard.writeText(lines.join('\n'));
+		window.umami?.track('copy', { command: lines[0] });
 		copied = true;
 		setTimeout(() => (copied = false), 1500);
 	}
