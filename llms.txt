@@ -1,0 +1,39 @@
+# Claude Code skills by Khaled Ferjani
+
+> Installable Claude Code skills, guardrail hooks and mods: PR writing rules, review chains, secret redaction, safety guards and more. Free and MIT licensed.
+
+Install inside Claude Code: `/plugin install <name> --marketplace rezk2ll/skills`.
+
+## Skills
+
+- [adr-template](https://ferjani.dev/skills/adr-template): Write or review ADRs that cover the hard parts: contracts, failure modes, observability, migration and rollback.
+- [comment-cleanup](https://ferjani.dev/skills/comment-cleanup): Tightens the code comments in a reviewed diff against your project's comment policy, as the tail of a code review.
+- [dependabot-handle](https://ferjani.dev/skills/dependabot-handle): Triage open Dependabot PRs: merge clean green bumps, close failing ones with a short reason, skip the rest.
+- [gardener](https://ferjani.dev/skills/gardener): Weekly upkeep of your Claude Code setup: acceptance metric, mistakes turned into checks, broken hooks and skills, repo drift.
+- [github-work](https://ferjani.dev/skills/github-work): Works through the open GitHub issues assigned to you one at a time, with review and test agents and one PR per issue.
+- [issues-workflow](https://ferjani.dev/skills/issues-workflow): Fixes a batch of GitHub issues in parallel worktrees through a background Workflow, one PR each, optionally merged on green CI.
+- [npm-audit-fix](https://ferjani.dev/skills/npm-audit-fix): Clear npm audit findings per sub-project, honor allowlists, verify with project scripts, open one PR per sub-project.
+- [postmortem-template](https://ferjani.dev/skills/postmortem-template): Write incident postmortems anchored to evidence, with trigger vs root cause, duration gaps and open questions.
+- [pr](https://ferjani.dev/skills/pr): Opens a pull request with a short body that says why, following strict writing rules: no test plan, no file lists, no dashes.
+- [pr-address-comments](https://ferjani.dev/skills/pr-address-comments): Pulls review comments on your PR, fixes what is actionable, and pushes, without ever writing to GitHub.
+- [release-version-bump](https://ferjani.dev/skills/release-version-bump): Cut a release for one project in a monorepo: sync, bump only if needed, tag with the CI tag prefix, push.
+- [review-pr](https://ferjani.dev/skills/review-pr): Reviews someone else's pull request end to end and writes the review as a local draft file, never posted.
+- [start](https://ferjani.dev/skills/start): Pulls the default branch, cuts a named branch from your task description, and starts working on the task.
+- [test-feature-locally](https://ferjani.dev/skills/test-feature-locally): Verify a change end to end before a PR: bring up compose, start the dev server, drive the touched flow with Playwright.
+## Guardrails
+
+- [format-on-edit](https://ferjani.dev/skills/format-on-edit): Formats and lints each file Claude writes or edits with the tools the project already has.
+- [guard](https://ferjani.dev/skills/guard): Denies merges, closes, secret reads, container teardown and shell rewrites of tracked files until you give the go.
+- [pre-ship-gate](https://ferjani.dev/skills/pre-ship-gate): Refuses commits and PRs that mix moves with logic, add dependencies, skip tests or are too big to review.
+- [review-chain](https://ferjani.dev/skills/review-chain): Blocks the PR skill until code-review, ponytail-review and comment-cleanup have run in the session.
+- [stop-check](https://ferjani.dev/skills/stop-check): Blocks the end of a turn while a changed JS/TS project fails its typecheck or related tests.
+- [text-lint](https://ferjani.dev/skills/text-lint): Refuses PR, issue and commit text with dashes, test plan sections, tables, hard wraps or features framed as fixes.
+- [worktree-guard](https://ferjani.dev/skills/worktree-guard): Refuses edits in the main checkout while another Claude session works there, and points you to a worktree.
+## Mods
+
+- [context-hud](https://ferjani.dev/skills/context-hud): Context window and plan usage limits at a glance: footer gauges, a per-category pane, and a warning past a threshold
+- [context-meter](https://ferjani.dev/skills/context-meter): Shows context size and session cost in the status line, and warns once when the context passes a threshold
+- [gh-guard](https://ferjani.dev/skills/gh-guard): Blocks Claude from posting GitHub comments or reviews as you until you give an explicit go
+- [read-guard](https://ferjani.dev/skills/read-guard): Caps unbounded Reads of large files and tells Claude how to read the rest
+- [secret-redactor](https://ferjani.dev/skills/secret-redactor): Swaps secrets, emails and IPs in tool output and prompts for stable placeholders, and restores real values in tool inputs
+- [smart-typecheck](https://ferjani.dev/skills/smart-typecheck): After a turn that edited code, runs the check script once in each package that was touched
