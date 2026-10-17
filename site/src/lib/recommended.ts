@@ -50,13 +50,6 @@ export const groups: Group[] = [
 				description: 'Reads frames, components and variables from Figma files.',
 				why: 'Building a screen from the actual design tokens, not from a screenshot.',
 				install: ['claude mcp add --transport http figma https://mcp.figma.com/mcp']
-			},
-			{
-				name: 'Notion',
-				url: 'https://developers.notion.com/docs/mcp',
-				description: 'Search and edit pages and databases in your Notion workspace.',
-				why: 'Specs and runbooks that live in Notion become usable context.',
-				install: ['claude mcp add --transport http notion https://mcp.notion.com/mcp']
 			}
 		]
 	},
