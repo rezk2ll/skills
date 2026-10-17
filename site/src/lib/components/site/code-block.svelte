@@ -17,7 +17,7 @@
 	{#if label}
 		<div class="border-b px-4 py-2 text-xs text-muted-foreground">{label}</div>
 	{/if}
-	<pre class="px-4 py-3 pr-12 font-mono text-[13px] leading-6 break-words whitespace-pre-wrap"><code
+	<pre class="px-4 py-3 pr-12 font-mono text-[13px] leading-6 break-all whitespace-pre-wrap"><code
 			>{#each lines as line, i (i)}<span class="block"
 					><span class="text-muted-foreground/60 select-none"
 						>{line.startsWith('/') ? '' : '$ '}</span

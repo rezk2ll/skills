@@ -8,14 +8,11 @@
 
 <a
 	href={resolve('/[slug]', { slug: item.slug })}
-	class="group relative flex flex-col gap-3 overflow-hidden rounded-xl border bg-card p-5 transition-all hover:-translate-y-0.5 hover:border-foreground/20 hover:shadow-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
+	class="group flex flex-col gap-3 rounded-xl border bg-card p-5 transition-colors hover:border-foreground/20 hover:bg-muted/40 focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none"
 >
-	<span class={['absolute inset-x-0 top-0 h-0.5 opacity-70', KINDS[item.kind].accent]}></span>
 	<div class="flex items-center justify-between gap-2">
-		<h3 class="font-mono text-sm font-medium group-hover:text-primary">{item.slug}</h3>
-		<Badge variant="secondary" class={['shrink-0', KINDS[item.kind].badge]}
-			>{KINDS[item.kind].label}</Badge
-		>
+		<h3 class="font-mono text-sm font-medium">{item.slug}</h3>
+		<Badge variant="secondary" class="shrink-0">{KINDS[item.kind].label}</Badge>
 	</div>
 	<p class="line-clamp-3 text-sm text-muted-foreground">{item.description}</p>
 	<div class="mt-auto flex flex-wrap gap-1.5 pt-1">

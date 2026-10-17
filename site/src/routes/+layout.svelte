@@ -31,7 +31,7 @@
 	<header class="sticky top-0 z-40 border-b bg-background/80 backdrop-blur">
 		<div class="mx-auto flex h-14 max-w-6xl items-center gap-4 px-4 sm:px-6">
 			<a href={resolve('/')} class="font-mono text-sm font-semibold tracking-tight">
-				ferjani<span class="text-primary">/</span><span class="text-muted-foreground">skills</span>
+				ferjani<span class="text-muted-foreground">/skills</span>
 			</a>
 			<nav class="hidden items-center gap-1 sm:flex">
 				{#each nav as item (item.href)}

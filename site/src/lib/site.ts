@@ -8,31 +8,22 @@ export const AUTHOR = { name: 'Khaled Ferjani', url: 'https://ferjani.dev' };
 
 export type Kind = 'skill' | 'hook' | 'mod';
 
-export const KINDS: Record<
-	Kind,
-	{ label: string; plural: string; blurb: string; badge: string; accent: string }
-> = {
+export const KINDS: Record<Kind, { label: string; plural: string; blurb: string }> = {
 	skill: {
 		label: 'Skill',
 		plural: 'Skills',
-		blurb: 'Instructions Claude loads when a task matches, or that you run with a slash command.',
-		badge: 'bg-sky-500/10 text-sky-700 dark:text-sky-300',
-		accent: 'bg-sky-500'
+		blurb: 'Instructions Claude loads when a task matches, or that you run with a slash command.'
 	},
 	hook: {
 		label: 'Guardrail',
 		plural: 'Guardrails',
-		blurb: 'Shell hooks that run on Claude Code events and can block an action before it happens.',
-		badge: 'bg-rose-500/10 text-rose-700 dark:text-rose-300',
-		accent: 'bg-rose-500'
+		blurb: 'Shell hooks that run on Claude Code events and can block an action before it happens.'
 	},
 	mod: {
 		label: 'Mod',
 		plural: 'Mods',
 		blurb:
-			'JavaScript function hooks that run inside Claude Code. Requires Claude Code 2.1.287 or later.',
-		badge: 'bg-violet-500/10 text-violet-700 dark:text-violet-300',
-		accent: 'bg-violet-500'
+			'JavaScript function hooks that run inside Claude Code. Requires Claude Code 2.1.287 or later.'
 	}
 };
 
