@@ -1,0 +1,32 @@
+{
+  "name": "read-guard",
+  "version": "1.0.0",
+  "description": "Caps unbounded Reads of large files and tells Claude how to read the rest",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/read-guard",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "read",
+    "context",
+    "tokens",
+    "guard"
+  ],
+  "userConfig": {
+    "maxBytes": {
+      "type": "number",
+      "title": "Size limit (bytes)",
+      "description": "A Read with no offset or limit of a file larger than this is capped",
+      "default": 40000
+    },
+    "capLines": {
+      "type": "number",
+      "title": "Lines to read",
+      "description": "How many lines a capped Read returns",
+      "default": 400
+    }
+  }
+}

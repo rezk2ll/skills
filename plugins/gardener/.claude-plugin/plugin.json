@@ -1,0 +1,19 @@
+{
+  "name": "gardener",
+  "version": "1.0.0",
+  "description": "Weekly upkeep of your Claude Code setup: acceptance metric, mistakes turned into checks, broken hooks and skills, repo drift.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/gardener",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "maintenance",
+    "hooks",
+    "skills",
+    "metrics",
+    "setup"
+  ]
+}

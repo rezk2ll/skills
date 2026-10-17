@@ -1,0 +1,379 @@
+{
+	"$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+	"name": "ferjani",
+	"description": "Claude Code skills, guardrail hooks and mods by Khaled Ferjani",
+	"owner": {
+		"name": "Khaled Ferjani",
+		"url": "https://ferjani.dev"
+	},
+	"plugins": [
+		{
+			"name": "adr-template",
+			"source": "./plugins/adr-template",
+			"description": "Write or review ADRs that cover the hard parts: contracts, failure modes, observability, migration and rollback.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"adr",
+				"architecture",
+				"design",
+				"documentation",
+				"decisions"
+			]
+		},
+		{
+			"name": "comment-cleanup",
+			"source": "./plugins/comment-cleanup",
+			"description": "Tightens the code comments in a reviewed diff against your project's comment policy, as the tail of a code review.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"comments",
+				"code-review",
+				"cleanup",
+				"diff"
+			]
+		},
+		{
+			"name": "context-hud",
+			"source": "./plugins/context-hud",
+			"description": "Context window and plan usage limits at a glance: footer gauges, a per-category pane, and a warning past a threshold",
+			"version": "1.0.0",
+			"category": "mods",
+			"tags": [
+				"context",
+				"tokens",
+				"usage",
+				"limits",
+				"hud"
+			]
+		},
+		{
+			"name": "context-meter",
+			"source": "./plugins/context-meter",
+			"description": "Shows context size and session cost in the status line, and warns once when the context passes a threshold",
+			"version": "1.0.0",
+			"category": "mods",
+			"tags": [
+				"context",
+				"tokens",
+				"cost",
+				"status"
+			]
+		},
+		{
+			"name": "dependabot-handle",
+			"source": "./plugins/dependabot-handle",
+			"description": "Triage open Dependabot PRs: merge clean green bumps, close failing ones with a short reason, skip the rest.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"dependabot",
+				"dependencies",
+				"github",
+				"triage",
+				"pull-requests"
+			]
+		},
+		{
+			"name": "format-on-edit",
+			"source": "./plugins/format-on-edit",
+			"description": "Formats and lints each file Claude writes or edits with the tools the project already has.",
+			"version": "1.0.0",
+			"category": "guardrails",
+			"tags": [
+				"hooks",
+				"format",
+				"lint",
+				"prettier",
+				"eslint"
+			]
+		},
+		{
+			"name": "gardener",
+			"source": "./plugins/gardener",
+			"description": "Weekly upkeep of your Claude Code setup: acceptance metric, mistakes turned into checks, broken hooks and skills, repo drift.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"maintenance",
+				"hooks",
+				"skills",
+				"metrics",
+				"setup"
+			]
+		},
+		{
+			"name": "gh-guard",
+			"source": "./plugins/gh-guard",
+			"description": "Blocks Claude from posting GitHub comments or reviews as you until you give an explicit go",
+			"version": "1.0.0",
+			"category": "mods",
+			"tags": [
+				"github",
+				"guard",
+				"comments",
+				"review",
+				"safety"
+			]
+		},
+		{
+			"name": "github-work",
+			"source": "./plugins/github-work",
+			"description": "Works through the open GitHub issues assigned to you one at a time, with review and test agents and one PR per issue.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"github",
+				"issues",
+				"backlog",
+				"pull-request"
+			]
+		},
+		{
+			"name": "guard",
+			"source": "./plugins/guard",
+			"description": "Denies merges, closes, secret reads, container teardown and shell rewrites of tracked files until you give the go.",
+			"version": "1.0.0",
+			"category": "guardrails",
+			"tags": [
+				"hooks",
+				"safety",
+				"secrets",
+				"git",
+				"guardrails"
+			]
+		},
+		{
+			"name": "issues-workflow",
+			"source": "./plugins/issues-workflow",
+			"description": "Fixes a batch of GitHub issues in parallel worktrees through a background Workflow, one PR each, optionally merged on green CI.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"github",
+				"issues",
+				"workflow",
+				"worktree",
+				"parallel"
+			]
+		},
+		{
+			"name": "npm-audit-fix",
+			"source": "./plugins/npm-audit-fix",
+			"description": "Clear npm audit findings per sub-project, honor allowlists, verify with project scripts, open one PR per sub-project.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"npm",
+				"audit",
+				"security",
+				"dependencies",
+				"vulnerabilities"
+			]
+		},
+		{
+			"name": "postmortem-template",
+			"source": "./plugins/postmortem-template",
+			"description": "Write incident postmortems anchored to evidence, with trigger vs root cause, duration gaps and open questions.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"postmortem",
+				"incident",
+				"outage",
+				"sre",
+				"documentation"
+			]
+		},
+		{
+			"name": "pr",
+			"source": "./plugins/pr",
+			"description": "Opens a pull request with a short body that says why, following strict writing rules: no test plan, no file lists, no dashes.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"git",
+				"github",
+				"pull-request",
+				"writing"
+			]
+		},
+		{
+			"name": "pr-address-comments",
+			"source": "./plugins/pr-address-comments",
+			"description": "Pulls review comments on your PR, fixes what is actionable, and pushes, without ever writing to GitHub.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"github",
+				"pull-request",
+				"review",
+				"comments"
+			]
+		},
+		{
+			"name": "pre-ship-gate",
+			"source": "./plugins/pre-ship-gate",
+			"description": "Refuses commits and PRs that mix moves with logic, add dependencies, skip tests or are too big to review.",
+			"version": "1.0.0",
+			"category": "guardrails",
+			"tags": [
+				"hooks",
+				"git",
+				"pull-request",
+				"review",
+				"size"
+			]
+		},
+		{
+			"name": "read-guard",
+			"source": "./plugins/read-guard",
+			"description": "Caps unbounded Reads of large files and tells Claude how to read the rest",
+			"version": "1.0.0",
+			"category": "mods",
+			"tags": [
+				"read",
+				"context",
+				"tokens",
+				"guard"
+			]
+		},
+		{
+			"name": "release-version-bump",
+			"source": "./plugins/release-version-bump",
+			"description": "Cut a release for one project in a monorepo: sync, bump only if needed, tag with the CI tag prefix, push.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"release",
+				"version",
+				"tag",
+				"monorepo",
+				"npm"
+			]
+		},
+		{
+			"name": "review-chain",
+			"source": "./plugins/review-chain",
+			"description": "Blocks the PR skill until code-review, ponytail-review and comment-cleanup have run in the session.",
+			"version": "1.0.0",
+			"category": "guardrails",
+			"tags": [
+				"hooks",
+				"review",
+				"pull-request",
+				"workflow"
+			]
+		},
+		{
+			"name": "review-pr",
+			"source": "./plugins/review-pr",
+			"description": "Reviews someone else's pull request end to end and writes the review as a local draft file, never posted.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"github",
+				"pull-request",
+				"code-review",
+				"review"
+			]
+		},
+		{
+			"name": "secret-redactor",
+			"source": "./plugins/secret-redactor",
+			"description": "Swaps secrets, emails and IPs in tool output and prompts for stable placeholders, and restores real values in tool inputs",
+			"version": "1.0.0",
+			"category": "mods",
+			"tags": [
+				"security",
+				"secrets",
+				"redaction",
+				"pii",
+				"privacy"
+			]
+		},
+		{
+			"name": "smart-typecheck",
+			"source": "./plugins/smart-typecheck",
+			"description": "After a turn that edited code, runs the check script once in each package that was touched",
+			"version": "1.0.0",
+			"category": "mods",
+			"tags": [
+				"typecheck",
+				"typescript",
+				"lint",
+				"npm",
+				"monorepo"
+			]
+		},
+		{
+			"name": "start",
+			"source": "./plugins/start",
+			"description": "Pulls the default branch, cuts a named branch from your task description, and starts working on the task.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"git",
+				"branch",
+				"workflow"
+			]
+		},
+		{
+			"name": "stop-check",
+			"source": "./plugins/stop-check",
+			"description": "Blocks the end of a turn while a changed JS/TS project fails its typecheck or related tests.",
+			"version": "1.0.0",
+			"category": "guardrails",
+			"tags": [
+				"hooks",
+				"typecheck",
+				"tests",
+				"javascript",
+				"typescript"
+			]
+		},
+		{
+			"name": "test-feature-locally",
+			"source": "./plugins/test-feature-locally",
+			"description": "Verify a change end to end before a PR: bring up compose, start the dev server, drive the touched flow with Playwright.",
+			"version": "1.0.0",
+			"category": "skills",
+			"tags": [
+				"testing",
+				"playwright",
+				"docker",
+				"e2e",
+				"local"
+			]
+		},
+		{
+			"name": "text-lint",
+			"source": "./plugins/text-lint",
+			"description": "Refuses PR, issue and commit text with dashes, test plan sections, tables, hard wraps or features framed as fixes.",
+			"version": "1.0.0",
+			"category": "guardrails",
+			"tags": [
+				"hooks",
+				"writing",
+				"pull-request",
+				"commit",
+				"lint"
+			]
+		},
+		{
+			"name": "worktree-guard",
+			"source": "./plugins/worktree-guard",
+			"description": "Refuses edits in the main checkout while another Claude session works there, and points you to a worktree.",
+			"version": "1.0.0",
+			"category": "guardrails",
+			"tags": [
+				"hooks",
+				"git",
+				"worktree",
+				"parallel",
+				"sessions"
+			]
+		}
+	]
+}

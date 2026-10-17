@@ -1,0 +1,19 @@
+{
+  "name": "pre-ship-gate",
+  "version": "1.0.0",
+  "description": "Refuses commits and PRs that mix moves with logic, add dependencies, skip tests or are too big to review.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/pre-ship-gate",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "git",
+    "pull-request",
+    "review",
+    "size"
+  ]
+}

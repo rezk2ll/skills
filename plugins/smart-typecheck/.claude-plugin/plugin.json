@@ -1,0 +1,33 @@
+{
+  "name": "smart-typecheck",
+  "version": "1.0.0",
+  "description": "After a turn that edited code, runs the check script once in each package that was touched",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/smart-typecheck",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "typecheck",
+    "typescript",
+    "lint",
+    "npm",
+    "monorepo"
+  ],
+  "userConfig": {
+    "script": {
+      "type": "string",
+      "title": "Script name",
+      "description": "The package.json script to run in each touched package",
+      "default": "check"
+    },
+    "packageManager": {
+      "type": "string",
+      "title": "Package manager",
+      "description": "The command that runs the script, as in <packageManager> run <script>",
+      "default": "npm"
+    }
+  }
+}

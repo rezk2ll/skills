@@ -1,0 +1,18 @@
+{
+  "name": "review-chain",
+  "version": "1.0.0",
+  "description": "Blocks the PR skill until code-review, ponytail-review and comment-cleanup have run in the session.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/review-chain",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "review",
+    "pull-request",
+    "workflow"
+  ]
+}

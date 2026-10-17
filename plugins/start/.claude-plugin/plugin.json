@@ -1,0 +1,17 @@
+{
+  "name": "start",
+  "version": "1.0.0",
+  "description": "Pulls the default branch, cuts a named branch from your task description, and starts working on the task.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/start",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "git",
+    "branch",
+    "workflow"
+  ]
+}

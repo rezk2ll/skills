@@ -1,0 +1,19 @@
+{
+  "name": "guard",
+  "version": "1.0.0",
+  "description": "Denies merges, closes, secret reads, container teardown and shell rewrites of tracked files until you give the go.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/guard",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "safety",
+    "secrets",
+    "git",
+    "guardrails"
+  ]
+}

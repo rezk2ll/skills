@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}\"/scripts/stop-check.sh",
+            "timeout": 300,
+            "statusMessage": "Typecheck and related tests..."
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "npm-audit-fix",
+  "version": "1.0.0",
+  "description": "Clear npm audit findings per sub-project, honor allowlists, verify with project scripts, open one PR per sub-project.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/npm-audit-fix",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "npm",
+    "audit",
+    "security",
+    "dependencies",
+    "vulnerabilities"
+  ]
+}

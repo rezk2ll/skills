@@ -1,0 +1,18 @@
+{
+  "name": "review-pr",
+  "version": "1.0.0",
+  "description": "Reviews someone else's pull request end to end and writes the review as a local draft file, never posted.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/review-pr",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "pull-request",
+    "code-review",
+    "review"
+  ]
+}

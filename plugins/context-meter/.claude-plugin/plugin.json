@@ -1,0 +1,26 @@
+{
+  "name": "context-meter",
+  "version": "1.0.0",
+  "description": "Shows context size and session cost in the status line, and warns once when the context passes a threshold",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/context-meter",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "context",
+    "tokens",
+    "cost",
+    "status"
+  ],
+  "userConfig": {
+    "warnAt": {
+      "type": "number",
+      "title": "Warn at (tokens)",
+      "description": "Toast once when the context grows past this many tokens",
+      "default": 200000
+    }
+  }
+}

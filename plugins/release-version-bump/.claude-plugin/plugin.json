@@ -1,0 +1,19 @@
+{
+  "name": "release-version-bump",
+  "version": "1.0.0",
+  "description": "Cut a release for one project in a monorepo: sync, bump only if needed, tag with the CI tag prefix, push.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/release-version-bump",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "release",
+    "version",
+    "tag",
+    "monorepo",
+    "npm"
+  ]
+}

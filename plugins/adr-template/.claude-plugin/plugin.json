@@ -1,0 +1,19 @@
+{
+  "name": "adr-template",
+  "version": "1.0.0",
+  "description": "Write or review ADRs that cover the hard parts: contracts, failure modes, observability, migration and rollback.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/adr-template",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "adr",
+    "architecture",
+    "design",
+    "documentation",
+    "decisions"
+  ]
+}

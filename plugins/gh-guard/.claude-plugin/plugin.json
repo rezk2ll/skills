@@ -1,0 +1,19 @@
+{
+  "name": "gh-guard",
+  "version": "1.0.0",
+  "description": "Blocks Claude from posting GitHub comments or reviews as you until you give an explicit go",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/gh-guard",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "guard",
+    "comments",
+    "review",
+    "safety"
+  ]
+}

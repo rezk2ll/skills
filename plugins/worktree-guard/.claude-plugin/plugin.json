@@ -1,0 +1,19 @@
+{
+  "name": "worktree-guard",
+  "version": "1.0.0",
+  "description": "Refuses edits in the main checkout while another Claude session works there, and points you to a worktree.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/worktree-guard",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "git",
+    "worktree",
+    "parallel",
+    "sessions"
+  ]
+}

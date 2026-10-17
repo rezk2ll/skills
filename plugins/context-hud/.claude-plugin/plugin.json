@@ -1,0 +1,28 @@
+{
+  "name": "context-hud",
+  "version": "1.0.0",
+  "description": "Context window and plan usage limits at a glance: footer gauges, a per-category pane, and a warning past a threshold",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/context-hud",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "context",
+    "tokens",
+    "usage",
+    "limits",
+    "hud"
+  ],
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "warnAt": {
+      "type": "number",
+      "title": "Warn at (tokens)",
+      "description": "Toast once when the context grows past this many tokens",
+      "default": 200000
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "test-feature-locally",
+  "version": "1.0.0",
+  "description": "Verify a change end to end before a PR: bring up compose, start the dev server, drive the touched flow with Playwright.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/test-feature-locally",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "testing",
+    "playwright",
+    "docker",
+    "e2e",
+    "local"
+  ]
+}

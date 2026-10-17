@@ -1,0 +1,19 @@
+{
+  "name": "stop-check",
+  "version": "1.0.0",
+  "description": "Blocks the end of a turn while a changed JS/TS project fails its typecheck or related tests.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/stop-check",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "typecheck",
+    "tests",
+    "javascript",
+    "typescript"
+  ]
+}

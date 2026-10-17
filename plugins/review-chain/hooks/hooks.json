@@ -1,0 +1,13 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      { "matcher": "Skill", "hooks": [ { "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}\"/scripts/chain-before-pr.sh", "timeout": 10 } ] }
+    ],
+    "PostToolUse": [
+      { "matcher": "Skill", "hooks": [ { "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}\"/scripts/review-chain-mark.sh", "timeout": 5 } ] }
+    ],
+    "UserPromptSubmit": [
+      { "hooks": [ { "type": "command", "command": "\"${CLAUDE_PLUGIN_ROOT}\"/scripts/review-chain-mark.sh", "timeout": 5 } ] }
+    ]
+  }
+}

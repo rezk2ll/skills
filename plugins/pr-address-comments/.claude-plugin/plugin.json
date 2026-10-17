@@ -1,0 +1,18 @@
+{
+  "name": "pr-address-comments",
+  "version": "1.0.0",
+  "description": "Pulls review comments on your PR, fixes what is actionable, and pushes, without ever writing to GitHub.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/pr-address-comments",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "pull-request",
+    "review",
+    "comments"
+  ]
+}

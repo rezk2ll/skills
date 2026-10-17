@@ -1,0 +1,19 @@
+{
+  "name": "postmortem-template",
+  "version": "1.0.0",
+  "description": "Write incident postmortems anchored to evidence, with trigger vs root cause, duration gaps and open questions.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/postmortem-template",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "postmortem",
+    "incident",
+    "outage",
+    "sre",
+    "documentation"
+  ]
+}

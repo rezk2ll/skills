@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}\"/scripts/pre-ship-gate.sh",
+            "timeout": 30,
+            "statusMessage": "Pre-ship gate..."
+          }
+        ],
+        "matcher": "Bash"
+      }
+    ]
+  }
+}

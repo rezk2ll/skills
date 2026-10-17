@@ -1,0 +1,19 @@
+{
+  "name": "format-on-edit",
+  "version": "1.0.0",
+  "description": "Formats and lints each file Claude writes or edits with the tools the project already has.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/format-on-edit",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "format",
+    "lint",
+    "prettier",
+    "eslint"
+  ]
+}

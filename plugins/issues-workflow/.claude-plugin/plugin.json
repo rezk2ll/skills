@@ -1,0 +1,19 @@
+{
+  "name": "issues-workflow",
+  "version": "1.0.0",
+  "description": "Fixes a batch of GitHub issues in parallel worktrees through a background Workflow, one PR each, optionally merged on green CI.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/issues-workflow",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "github",
+    "issues",
+    "workflow",
+    "worktree",
+    "parallel"
+  ]
+}

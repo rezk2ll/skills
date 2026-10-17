@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}\"/scripts/format-edited.sh",
+            "timeout": 60,
+            "statusMessage": "Formatting and linting..."
+          }
+        ],
+        "matcher": "Write|Edit"
+      }
+    ]
+  }
+}

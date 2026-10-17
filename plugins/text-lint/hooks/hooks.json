@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PLUGIN_ROOT}\"/scripts/text-lint.py",
+            "timeout": 10,
+            "statusMessage": "Checking PR/commit text..."
+          }
+        ],
+        "matcher": "Bash"
+      }
+    ]
+  }
+}

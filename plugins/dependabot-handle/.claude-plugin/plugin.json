@@ -1,0 +1,19 @@
+{
+  "name": "dependabot-handle",
+  "version": "1.0.0",
+  "description": "Triage open Dependabot PRs: merge clean green bumps, close failing ones with a short reason, skip the rest.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/dependabot-handle",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "dependabot",
+    "dependencies",
+    "github",
+    "triage",
+    "pull-requests"
+  ]
+}

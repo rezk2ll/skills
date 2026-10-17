@@ -1,0 +1,19 @@
+{
+  "name": "text-lint",
+  "version": "1.0.0",
+  "description": "Refuses PR, issue and commit text with dashes, test plan sections, tables, hard wraps or features framed as fixes.",
+  "author": {
+    "name": "Khaled Ferjani",
+    "url": "https://ferjani.dev"
+  },
+  "homepage": "https://ferjani.dev/skills/text-lint",
+  "repository": "https://github.com/rezk2ll/skills",
+  "license": "MIT",
+  "keywords": [
+    "hooks",
+    "writing",
+    "pull-request",
+    "commit",
+    "lint"
+  ]
+}
